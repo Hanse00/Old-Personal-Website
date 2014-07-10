@@ -1,0 +1,28 @@
+application: personal-web-project
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: index.html
+  upload: index.html
+
+- url: /index.html
+  static_files: index.html
+  upload: index.html
+
+- url: /nocolor
+  static_files: nocolor/index.html
+  upload: nocolor/index.html
+
+- url: /nocolor/index.html
+  static_files: nocolor/index.html
+  upload: nocolor/index.html
+
+- url: /css
+  static_dir: css
+
+- url: /js
+  static_dir: js

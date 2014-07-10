@@ -17,9 +17,17 @@ handlers:
   static_files: nocolor/index.html
   upload: nocolor/index.html
 
+- url: /nocolor/
+  static_files: nocolor/index.html
+  upload: nocolor/index.html
+
 - url: /nocolor/index.html
   static_files: nocolor/index.html
   upload: nocolor/index.html
+
+- url: /favicon.ico
+  static_files: favicon.ico
+  upload: favicon.ico
 
 - url: /css
   static_dir: css

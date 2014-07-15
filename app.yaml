@@ -1,5 +1,5 @@
 application: personal-web-project
-version: 3
+version: 4
 runtime: python27
 api_version: 1
 threadsafe: true
@@ -25,6 +25,30 @@ handlers:
   static_files: nocolor/index.html
   upload: nocolor/index.html
 
+- url: /color
+  static_files: color/index.html
+  upload: color/index.html
+
+- url: /color/
+  static_files: color/index.html
+  upload: color/index.html
+
+- url: /color/index.html
+  static_files: color/index.html
+  upload: color/index.html
+
+- url: /gametimer
+  static_files: gametimer/index.html
+  upload: gametimer/index.html
+
+- url: /gametimer/
+  static_files: gametimer/index.html
+  upload: gametimer/index.html
+
+- url: /gametimer/index.html
+  static_files: gametimer/index.html
+  upload: gametimer/index.html
+
 - url: /favicon.ico
   static_files: favicon.ico
   upload: favicon.ico
@@ -38,3 +62,9 @@ handlers:
 
 - url: /js
   static_dir: js
+
+- url: /images
+  static_dir: images
+
+- url: /downloads
+  static_dir: downloads

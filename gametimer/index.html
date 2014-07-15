@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+ 	<head>
+ 		<meta charset="utf-8">
+ 		<title>Philip Hansen</title>
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<meta name="google-site-verification" content="ojHJYuK9rOo3KCrEOUd_2rRIFGrgs_B_6vB_7WNhFHc" />
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-52517701-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+ 	</head> 
+ 	<body>
+		<h1>Game Timer</h1>
+		<p>Game timer is a Minecraft mod which allows you to monitor the time you spend in a game session.
+		For myself it is useful as I often simply don't realize that hours are passing by.</p>
+		<p>Version</p>
+		At this time the mod is <b>1.6.4</b> only, simply because that's the version I play FTB on.<br>
+		It may be updated to other versions, if there's any market for it.
+		<p>Features</p>
+		<ul>
+			<li>Automatic in game notification of how long you've played</li>
+			<li>Configurable notification interval</li>
+			<li>Completely client side - The server doesn't need to even know you have the mod installed</li>
+			<li>Small CO2 footprint - I promise I didn't pollute too much while writing the code</li>
+		</ul>
+		<p>Config</p>
+		<pre>
+config {
+    B:"Debug Mode (Print time to console)"=true
+    I:"Notification Interval (In seconds)"=30
+}
+		</pre>
+		<p>As you can see, pretty straight forward. The debug value will just spam your console every second
+		(If you for some reason other than me debugging the code would want that?).<br>
+		The notification interval is time time between every in game chat message displaying your game time.</p>
+		<p>Screenshot</p>
+		For good measure, here is how it looks in game<br>
+		<img src="/images/gametimer.png" />
+		<p>Download</p>
+		<a href="/downloads/GameTimer-1.6.4-0.1.jar" onclick="ga('send', 'event', 'button', 'click', '1.6 download')">1.6.4 Client Only</a>
+ 	</body>
+</html>

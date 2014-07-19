@@ -20,30 +20,36 @@
 		<h1>Game Timer</h1>
 		<p>Game timer is a Minecraft mod which allows you to monitor the time you spend in a game session.
 		For myself it is useful as I often simply don't realize that hours are passing by.</p>
-		<p>Version</p>
+		<h2>Version</h2>
 		At this time the mod is <b>1.6.4</b> only, simply because that's the version I play FTB on.<br>
 		It may be updated to other versions, if there's any market for it.
-		<p>Features</p>
+		<h2>Features</h2>
 		<ul>
 			<li>Automatic in game notification of how long you've played</li>
 			<li>Configurable notification interval</li>
 			<li>Completely client side - The server doesn't need to even know you have the mod installed</li>
 			<li>Small CO2 footprint - I promise I didn't pollute too much while writing the code</li>
 		</ul>
-		<p>Config</p>
+		<h2>Config</h2>
 		<pre>
 config {
-    B:"Debug Mode (Print time to console)"=true
-    I:"Notification Interval (In seconds)"=30
+    B:"Debug Mode (Print time to console)"=false
+    B:"Display total time"=true
+    I:"Notification Interval (In seconds)"=300
+    I:"Save interval"=600
 }
 		</pre>
-		<p>As you can see, pretty straight forward. The debug value will just spam your console every second
-		(If you for some reason other than me debugging the code would want that?).<br>
-		The notification interval is time time between every in game chat message displaying your game time.</p>
-		<p>Screenshot</p>
+		<ul>
+			<li>The debug value will just spam your console every second (If you for some reason other than me debugging the code would want that?)</li>
+			<li>Display total time determins if the total time on the server will be displayed together with the session time</li>
+			<li>The notification interval is time time between every in game chat message displaying your game time</li>
+			<li>Save interval is the interval between which the mod saves your total time on the server to disk</li>
+		</ul>
+		<h2>Downloads (All versions are client only)</h2>
+		<a onclick="ga('send', 'event', 'button', 'click', 'gametimer 1.6.4-0.2 download', { 'hitCallback': function() { document.location = '/downloads/GameTimer-1.6.4-0.2.jar'; }}); return false;" href="/downloads/GameTimer-1.6.4-0.2.jar">Version 0.2 for 1.6.4</a><br>
+		<a onclick="ga('send', 'event', 'button', 'click', 'gametimer 1.6.4-0.1 download', { 'hitCallback': function() { document.location = '/downloads/GameTimer-1.6.4-0.1.jar'; }}); return false;" href="/downloads/GameTimer-1.6.4-0.1.jar">Version 0.1 for 1.6.4</a>
+		<h2>Screenshot</h2>
 		For good measure, here is how it looks in game<br>
 		<img src="/images/gametimer.png" />
-		<p>Download</p>
-		<a onclick="ga('send', 'event', 'button', 'click', '1.6 download', { 'hitCallback': function() { document.location = '/downloads/GameTimer-1.6.4-0.1.jar'; }}); return false;" href="/downloads/GameTimer-1.6.4-0.1.jar">1.6.4 Client Only</a>
  	</body>
 </html>
